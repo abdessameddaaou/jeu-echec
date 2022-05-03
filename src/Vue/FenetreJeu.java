@@ -34,7 +34,7 @@ import java.awt.Color;
 public class FenetreJeu extends JFrame 
 {
 
-	/* Cette classe represente la vue de l'application. On a créer le JFrame et les JPanel qui 
+	/* Cette classe represente la vue de l'application. On a crÃ©er le JFrame et les JPanel qui 
 	 * contients les differents bouttons et la table de chess
 	 * */
 	
@@ -73,14 +73,14 @@ public class FenetreJeu extends JFrame
 
 	}
     
-	/* Dans cette fonction on a affché les JPanel, JButton.
-	 *  pour la grille on l'a donné un gridlayout de 8 colonne et 7 ligne qui nous permettera de diviser la grille.
+	/* Dans cette fonction on a affchÃ© les JPanel, JButton.
+	 *  pour la grille on l'a donnÃ© un gridlayout de 8 colonne et 7 ligne qui nous permettera de diviser la grille.
 	 *  Puis on les a ajouter au JFrame.
 	 *  
-	 *  Aprés on a ajouter les écouteurs au bouttons.
+	 *  AprÃ©s on a ajouter les Ã©couteurs au bouttons.
 	 *  
-	 *  Ensuite on a créer un boolean white on l'a donné la valeur true, puis on a créé des case de JLabel et 
-	 *  chaque case on l'infecte a mouseListener. ensuit on change la valuer de booléen pour permutter entre blanc et gris
+	 *  Ensuite on a crÃ©er un boolean white on l'a donnÃ© la valeur true, puis on a crÃ©Ã© des case de JLabel et 
+	 *  chaque case on l'infecte a mouseListener. ensuit on change la valuer de boolÃ©en pour permutter entre blanc et gris
 	 *  
 	 *  A la fin de la boucle, on obtient la table de chess complete.
 	 * */
@@ -114,8 +114,6 @@ public class FenetreJeu extends JFrame
 		
 		
 		panelControle.add(start);
-		panelControle.add(sauvgarder);
-		panelControle.add(charger);
 		panelControle.add(prom);
 		
 		prom.setLayout(new GridLayout(4, 1, 0, 0));
@@ -157,8 +155,8 @@ public class FenetreJeu extends JFrame
 		
 	}
 	
-		/* Dans cette fonction, on a mit en place une boucle qui prend à chaque fois une lettre de la liste nommée les_pieces
-		 * et l'affecte au chemin de la photo ce qui nous permet de récupérer à chaque fois une phot correspondante à la piece.
+		/* Dans cette fonction, on a mit en place une boucle qui prend Ã  chaque fois une lettre de la liste nommÃ©e les_pieces
+		 * et l'affecte au chemin de la photo ce qui nous permet de rÃ©cupÃ©rer Ã  chaque fois une phot correspondante Ã  la piece.
 		 * 
 		 * Puis on initialise la case avec l'objet de la piece correspondante.
 		 * 
@@ -216,10 +214,10 @@ public class FenetreJeu extends JFrame
 			
 		}
 
-		/* on a créé une méthode qu'on l'a appelé paint cette méthode sera éxécuté quand le joueur clique sur le bouton start a l'aide
+		/* on a crÃ©Ã© une mÃ©thode qu'on l'a appelÃ© paint cette mÃ©thode sera Ã©xÃ©cutÃ© quand le joueur clique sur le bouton start a l'aide
 		 * de la fonction getActionCommand()
 		 * 
-		 * Puis on rend le cadre de la case séléctionnée vert pour indiquer au joueur ce qu'il a choisi
+		 * Puis on rend le cadre de la case sÃ©lÃ©ctionnÃ©e vert pour indiquer au joueur ce qu'il a choisi
 		 * */
 	
 		public void paint()
@@ -238,12 +236,12 @@ public class FenetreJeu extends JFrame
 		} 
 		
 		
-		/* pour mettre a jour les pion on les récupère et on modifi grace au setters
+		/* pour mettre a jour les pion on les rÃ©cupÃ¨re et on modifi grace au setters
 		 * 
-		 * estValide(deplacement): sert à indiquer si la piéce sélectionnée est autorisée à boujer vers la case d'arrivé sélectionné ou non.
-		 * captureParUnPionPossible: sert à indiquer si la case d'arrivé contient une piece qu'on peut capturer.
+		 * estValide(deplacement): sert Ã  indiquer si la piÃ©ce sÃ©lectionnÃ©e est autorisÃ©e Ã  boujer vers la case d'arrivÃ© sÃ©lectionnÃ© ou non.
+		 * captureParUnPionPossible: sert Ã  indiquer si la case d'arrivÃ© contient une piece qu'on peut capturer.
 		 * 
-		 * à la fin on trouve une méthode pour permutter la couleur à chaque fois qu'un joueur joue son tour.
+		 * Ã  la fin on trouve une mÃ©thode pour permutter la couleur Ã  chaque fois qu'un joueur joue son tour.
 		 * */
 		public void repaint()
 		{
